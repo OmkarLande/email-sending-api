@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/lists', listsRouter);
 app.use('/users', usersRouter); 
 
-mongoose.connect('mongodb://localhost:27017/user-list-management', {
+mongoose.connect((process.env.DB_URL || 'mongodb://localhost:27017/user-list-management'), {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
