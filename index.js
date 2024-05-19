@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/lists', listsRouter);
 app.use('/users', usersRouter); 
 app.use('/', (req, res) => {
-  res.send('Welcome to the User List Management API Please use postman doucment to test the API', 'https://documenter.getpostman.com/view/26807468/2sA3QmCuEY');
+  res.send('Welcome to the User List Management API Please use postman doucment to test the API '+ 'https://documenter.getpostman.com/view/26807468/2sA3QmCuEY');
 });
 
 mongoose.connect((process.env.DB_URL || 'mongodb://localhost:27017/user-list-management'), {
