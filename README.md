@@ -111,3 +111,7 @@ This project aims to develop a RESTful API for managing user lists with customiz
     ├── uploads # Uploaded CSV files
     └── README.md # Project documentation
 ```
+
+
+## Email Template Example
+![Email Template](./images/Email-Sending%20Api.png)
